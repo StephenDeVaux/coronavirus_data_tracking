@@ -4,7 +4,7 @@ var parse = require("csv-parse");
 var csvFile = "coronadata.csv";
 var newcsvFile = "newcoronadata.csv";
 var newcsvFile2 = "newFrom100coronadata.csv";
-const numberofcasesLimit = 5; 
+const numberofcasesLimit = 4; 
 
 ///WILL NEED TO UPDATE THIS EVERY TIME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 class CountryCaseRow {
@@ -12,7 +12,9 @@ class CountryCaseRow {
         Ja22, Ja23, Ja24, Ja25, Ja26, Ja27, Ja28, Ja29, Ja30, Ja31,
         Fe01, Fe02, Fe03, Fe04, Fe05, Fe06, Fe07, Fe08, Fe09, Fe10, Fe11, Fe12, Fe13, Fe14, Fe15, Fe16, Fe17, Fe18, Fe19, Fe20,
         Fe21, Fe22, Fe23, Fe24, Fe25, Fe26, Fe27, Fe28, Fe29,
-        Ma01, Ma02, Ma03, Ma04, Ma05, Ma06, Ma07, Ma08, Ma09, Ma10, Ma11, Ma12, Ma13, Ma14) {
+        Ma01, Ma02, Ma03, Ma04, Ma05, Ma06, Ma07, Ma08, Ma09, Ma10, Ma11, Ma12, Ma13, Ma14, Ma15, Ma16, Ma17, Ma18, Ma19, Ma20,
+        Ma21, Ma22, Ma23, Ma24, Ma25, Ma26, Ma27, Ma28, Ma29, Ma30, Ma31
+        ) {
         this.province = Province;
         this.country = Country;
         this.lat = Lat;
@@ -70,26 +72,43 @@ class CountryCaseRow {
         this.ma12 = Ma12;
         this.ma13 = Ma13;
         this.ma14 = Ma14;
+        this.ma15 = Ma15;
+        this.ma16 = Ma16;
+        this.ma17 = Ma17;
+        this.ma18 = Ma18;
+        this.ma19 = Ma19;
+        this.ma20 = Ma20;
+        this.ma21 = Ma21;
+        this.ma22 = Ma22;
+        this.ma23 = Ma23;
+        this.ma24 = Ma24;
+        this.ma25 = Ma25;
+        this.ma26 = Ma26;
+        this.ma27 = Ma27;
+        this.ma28 = Ma28;
+        this.ma29 = Ma29;
+        this.ma30 = Ma30;
+        this.ma31 = Ma31;
     }
 }
 
 //Will need to update all of these!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 var Australia = new CountryCaseRow('', 'Australia',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var Canada = new CountryCaseRow('', 'Canada',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var China = new CountryCaseRow('', 'China',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var HongKong = new CountryCaseRow('', 'Hong Kong',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var Denmark = new CountryCaseRow('', 'Denmark',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var France = new CountryCaseRow('', 'France',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var UnitedKingdom = new CountryCaseRow('', 'United Kingdom',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var US = new CountryCaseRow('', 'US',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 
 class CountryCasesbyDay {
@@ -680,6 +699,57 @@ const removingDaysBelow100 = a => {
         if (parseInt(value.ma14) > numberofcasesLimit) {
             saveToList(value.ma14)
         }
+        if (parseInt(value.ma15) > numberofcasesLimit) {
+            saveToList(value.ma15)
+        }
+        if (parseInt(value.ma16) > numberofcasesLimit) {
+            saveToList(value.ma16)
+        }
+        if (parseInt(value.ma17) > numberofcasesLimit) {
+            saveToList(value.ma17)
+        }
+        if (parseInt(value.ma18) > numberofcasesLimit) {
+            saveToList(value.ma18)
+        }
+        if (parseInt(value.ma19) > numberofcasesLimit) {
+            saveToList(value.ma19)
+        }
+        if (parseInt(value.ma20) > numberofcasesLimit) {
+            saveToList(value.ma20)
+        }
+        if (parseInt(value.ma21) > numberofcasesLimit) {
+            saveToList(value.ma21)
+        }
+        if (parseInt(value.ma22) > numberofcasesLimit) {
+            saveToList(value.ma22)
+        }
+        if (parseInt(value.ma23) > numberofcasesLimit) {
+            saveToList(value.ma23)
+        }
+        if (parseInt(value.ma24) > numberofcasesLimit) {
+            saveToList(value.ma24)
+        }
+        if (parseInt(value.ma25) > numberofcasesLimit) {
+            saveToList(value.ma25)
+        }
+        if (parseInt(value.ma26) > numberofcasesLimit) {
+            saveToList(value.ma26)
+        }
+        if (parseInt(value.ma27) > numberofcasesLimit) {
+            saveToList(value.ma27)
+        }
+        if (parseInt(value.ma28) > numberofcasesLimit) {
+            saveToList(value.ma28)
+        }
+        if (parseInt(value.ma29) > numberofcasesLimit) {
+            saveToList(value.ma29)
+        }
+        if (parseInt(value.ma30) > numberofcasesLimit) {
+            saveToList(value.ma30)
+        }
+        if (parseInt(value.ma31) > numberofcasesLimit) {
+            saveToList(value.ma31)
+        }
         if (day != 1) {
             country.days = day - 1
             listBelow100.push(country)
@@ -744,6 +814,23 @@ const additionOfCountries = (a, b) => {
         String(parseInt(a.ma12) + parseInt(b.ma12)),
         String(parseInt(a.ma13) + parseInt(b.ma13)),
         String(parseInt(a.ma14) + parseInt(b.ma14)),
+        String(parseInt(a.ma15) + parseInt(b.ma15)),
+        String(parseInt(a.ma16) + parseInt(b.ma16)),
+        String(parseInt(a.ma17) + parseInt(b.ma17)),
+        String(parseInt(a.ma18) + parseInt(b.ma18)),
+        String(parseInt(a.ma19) + parseInt(b.ma19)),
+        String(parseInt(a.ma20) + parseInt(b.ma20)),
+        String(parseInt(a.ma21) + parseInt(b.ma21)),
+        String(parseInt(a.ma22) + parseInt(b.ma22)),
+        String(parseInt(a.ma23) + parseInt(b.ma23)),
+        String(parseInt(a.ma24) + parseInt(b.ma24)),
+        String(parseInt(a.ma25) + parseInt(b.ma25)),
+        String(parseInt(a.ma26) + parseInt(b.ma26)),
+        String(parseInt(a.ma27) + parseInt(b.ma27)),
+        String(parseInt(a.ma28) + parseInt(b.ma28)),
+        String(parseInt(a.ma29) + parseInt(b.ma29)),
+        String(parseInt(a.ma30) + parseInt(b.ma30)),
+        String(parseInt(a.ma31) + parseInt(b.ma31)),
     )
     return countryTotal
 }
@@ -862,6 +949,23 @@ const writeCSV = userList => {
             { id: 'ma12', title: 'ma12' },
             { id: 'ma13', title: 'ma13' },
             { id: 'ma14', title: 'ma14' },
+            { id: 'ma15', title: 'ma15' },
+            { id: 'ma16', title: 'ma16' },
+            { id: 'ma17', title: 'ma17' },
+            { id: 'ma18', title: 'ma18' },
+            { id: 'ma19', title: 'ma19' },
+            { id: 'ma20', title: 'ma20' },
+            { id: 'ma21', title: 'ma21' },
+            { id: 'ma22', title: 'ma22' },
+            { id: 'ma23', title: 'ma23' },
+            { id: 'ma24', title: 'ma24' },
+            { id: 'ma25', title: 'ma25' },
+            { id: 'ma26', title: 'ma26' },
+            { id: 'ma27', title: 'ma27' },
+            { id: 'ma28', title: 'ma28' },
+            { id: 'ma29', title: 'ma29' },
+            { id: 'ma30', title: 'ma30' },
+            { id: 'ma31', title: 'ma31' },
         ]
     });
 
