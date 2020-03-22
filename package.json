@@ -1,0 +1,24 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "coronavirus_data_tracking\r Extremely rough and ready code! Pretty crappy and likely to break....",
+  "main": "corona.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenDeVaux/coronavirus_data_tracking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephenDeVaux/coronavirus_data_tracking/issues"
+  },
+  "homepage": "https://github.com/StephenDeVaux/coronavirus_data_tracking#readme",
+  "dependencies": {
+    "csv": "^5.3.2",
+    "csv-parse": "^4.8.8",
+    "csv-writer": "^1.6.0"
+  }
+}
