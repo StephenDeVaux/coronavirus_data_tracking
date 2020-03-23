@@ -4,7 +4,7 @@ var parse = require("csv-parse");
 var csvFile = "coronadata.csv";
 var newcsvFile = "newcoronadata.csv";
 var newcsvFile2 = "newFrom100coronadata.csv";
-const numberofcasesLimit = 4; 
+const numberofcasesLimit = 100; 
 
 ///WILL NEED TO UPDATE THIS EVERY TIME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 class CountryCaseRow {
