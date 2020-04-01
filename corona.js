@@ -13,7 +13,9 @@ class CountryCaseRow {
         Fe01, Fe02, Fe03, Fe04, Fe05, Fe06, Fe07, Fe08, Fe09, Fe10, Fe11, Fe12, Fe13, Fe14, Fe15, Fe16, Fe17, Fe18, Fe19, Fe20,
         Fe21, Fe22, Fe23, Fe24, Fe25, Fe26, Fe27, Fe28, Fe29,
         Ma01, Ma02, Ma03, Ma04, Ma05, Ma06, Ma07, Ma08, Ma09, Ma10, Ma11, Ma12, Ma13, Ma14, Ma15, Ma16, Ma17, Ma18, Ma19, Ma20,
-        Ma21, Ma22, Ma23, Ma24, Ma25, Ma26, Ma27, Ma28, Ma29, Ma30, Ma31
+        Ma21, Ma22, Ma23, Ma24, Ma25, Ma26, Ma27, Ma28, Ma29, Ma30, Ma31, 
+        Ap01, Ap02, Ap03, Ap04, Ap05, Ap06, Ap07, Ap08, Ap09, Ap10, Ap11, Ap12, Ap13, Ap14, Ap15, Ap16, Ap17, Ap18, Ap19, Ap20,   
+        Ap21, Ap22, Ap23, Ap24, Ap25, Ap26, Ap27, Ap28, Ap29, Ap30
         ) {
         this.province = Province;
         this.country = Country;
@@ -89,26 +91,72 @@ class CountryCaseRow {
         this.ma29 = Ma29;
         this.ma30 = Ma30;
         this.ma31 = Ma31;
+        this.ap01 = Ap01;
+        this.ap02 = Ap02;
+        this.ap03 = Ap03;
+        this.ap04 = Ap04;
+        this.ap05 = Ap05;
+        this.ap06 = Ap06;
+        this.ap07 = Ap07;
+        this.ap08 = Ap08;
+        this.ap09 = Ap09;
+        this.ap10 = Ap10;
+        this.ap11 = Ap11;
+        this.ap12 = Ap12;
+        this.ap13 = Ap13;
+        this.ap14 = Ap14;
+        this.ap15 = Ap15;
+        this.ap16 = Ap16;
+        this.ap17 = Ap17;
+        this.ap18 = Ap18;
+        this.ap19 = Ap19;
+        this.ap20 = Ap20;
+        this.ap21 = Ap21;
+        this.ap22 = Ap22;
+        this.ap23 = Ap23;
+        this.ap24 = Ap24;
+        this.ap25 = Ap25;
+        this.ap26 = Ap26;
+        this.ap27 = Ap27;
+        this.ap28 = Ap28;
+        this.ap29 = Ap29;
+        this.ap30 = Ap30;
     }
 }
 
 //Will need to update all of these!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 var Australia = new CountryCaseRow('', 'Australia',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var Canada = new CountryCaseRow('', 'Canada',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var China = new CountryCaseRow('', 'China',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var HongKong = new CountryCaseRow('', 'Hong Kong',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var Denmark = new CountryCaseRow('', 'Denmark',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var France = new CountryCaseRow('', 'France',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var UnitedKingdom = new CountryCaseRow('', 'United Kingdom',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 var US = new CountryCaseRow('', 'US',
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 
 class CountryCasesbyDay {
@@ -750,6 +798,96 @@ const removingDaysBelow100 = a => {
         if (parseInt(value.ma31) > numberofcasesLimit) {
             saveToList(value.ma31)
         }
+        if (parseInt(value.ap01) > numberofcasesLimit) {
+            saveToList(value.ap01)
+        }
+        if (parseInt(value.ap02) > numberofcasesLimit) {
+            saveToList(value.ap02)
+        }
+        if (parseInt(value.ap03) > numberofcasesLimit) {
+            saveToList(value.ap03)
+        }
+        if (parseInt(value.ap04) > numberofcasesLimit) {
+            saveToList(value.ap04)
+        }
+        if (parseInt(value.ap05) > numberofcasesLimit) {
+            saveToList(value.ap05)
+        }
+        if (parseInt(value.ap06) > numberofcasesLimit) {
+            saveToList(value.ap06)
+        }
+        if (parseInt(value.ap07) > numberofcasesLimit) {
+            saveToList(value.ap07)
+        }
+        if (parseInt(value.ap08) > numberofcasesLimit) {
+            saveToList(value.ap08)
+        }
+        if (parseInt(value.ap09) > numberofcasesLimit) {
+            saveToList(value.ap09)
+        }
+        if (parseInt(value.ap0) > numberofcasesLimit) {
+            saveToList(value.ap10)
+        }
+        if (parseInt(value.ap11) > numberofcasesLimit) {
+            saveToList(value.ap11)
+        }
+        if (parseInt(value.ap12) > numberofcasesLimit) {
+            saveToList(value.ap12)
+        }
+        if (parseInt(value.ap13) > numberofcasesLimit) {
+            saveToList(value.ap13)
+        }
+        if (parseInt(value.ap14) > numberofcasesLimit) {
+            saveToList(value.ap14)
+        }
+        if (parseInt(value.ap15) > numberofcasesLimit) {
+            saveToList(value.ap15)
+        }
+        if (parseInt(value.ap16) > numberofcasesLimit) {
+            saveToList(value.ap16)
+        }
+        if (parseInt(value.ap17) > numberofcasesLimit) {
+            saveToList(value.ap17)
+        }
+        if (parseInt(value.ap18) > numberofcasesLimit) {
+            saveToList(value.ap18)
+        }
+        if (parseInt(value.ap19) > numberofcasesLimit) {
+            saveToList(value.ap19)
+        }
+        if (parseInt(value.ap20) > numberofcasesLimit) {
+            saveToList(value.ap20)
+        }
+        if (parseInt(value.ap21) > numberofcasesLimit) {
+            saveToList(value.ap21)
+        }
+        if (parseInt(value.ap22) > numberofcasesLimit) {
+            saveToList(value.ap22)
+        }
+        if (parseInt(value.ap23) > numberofcasesLimit) {
+            saveToList(value.ap23)
+        }
+        if (parseInt(value.ap24) > numberofcasesLimit) {
+            saveToList(value.ap24)
+        }
+        if (parseInt(value.ap25) > numberofcasesLimit) {
+            saveToList(value.ap25)
+        }
+        if (parseInt(value.ap26) > numberofcasesLimit) {
+            saveToList(value.ap26)
+        }
+        if (parseInt(value.ap27) > numberofcasesLimit) {
+            saveToList(value.ap27)
+        }
+        if (parseInt(value.ap28) > numberofcasesLimit) {
+            saveToList(value.ap28)
+        }
+        if (parseInt(value.ap29) > numberofcasesLimit) {
+            saveToList(value.ap29)
+        }
+        if (parseInt(value.ap30) > numberofcasesLimit) {
+            saveToList(value.ap30)
+        }
         if (day != 1) {
             country.days = day - 1
             listBelow100.push(country)
@@ -831,6 +969,37 @@ const additionOfCountries = (a, b) => {
         String(parseInt(a.ma29) + parseInt(b.ma29)),
         String(parseInt(a.ma30) + parseInt(b.ma30)),
         String(parseInt(a.ma31) + parseInt(b.ma31)),
+        String(parseInt(a.ap01) + parseInt(b.ap01)),
+        String(parseInt(a.ap02) + parseInt(b.ap02)),
+        String(parseInt(a.ap03) + parseInt(b.ap03)),
+        String(parseInt(a.ap04) + parseInt(b.ap04)),
+        String(parseInt(a.ap05) + parseInt(b.ap05)),
+        String(parseInt(a.ap06) + parseInt(b.ap06)),
+        String(parseInt(a.ap07) + parseInt(b.ap07)),
+        String(parseInt(a.ap08) + parseInt(b.ap08)),
+        String(parseInt(a.ap09) + parseInt(b.ap09)),
+        String(parseInt(a.ap10) + parseInt(b.ap10)),
+        String(parseInt(a.ap11) + parseInt(b.ap11)),
+        String(parseInt(a.ap12) + parseInt(b.ap12)),
+        String(parseInt(a.ap13) + parseInt(b.ap13)),
+        String(parseInt(a.ap14) + parseInt(b.ap14)),
+        String(parseInt(a.ap15) + parseInt(b.ap15)),
+        String(parseInt(a.ap16) + parseInt(b.ap16)),
+        String(parseInt(a.ap17) + parseInt(b.ap17)),
+        String(parseInt(a.ap18) + parseInt(b.ap18)),
+        String(parseInt(a.ap19) + parseInt(b.ap19)),
+        String(parseInt(a.ap20) + parseInt(b.ap20)),
+        String(parseInt(a.ap21) + parseInt(b.ap21)),
+        String(parseInt(a.ap22) + parseInt(b.ap22)),
+        String(parseInt(a.ap23) + parseInt(b.ap23)),
+        String(parseInt(a.ap24) + parseInt(b.ap24)),
+        String(parseInt(a.ap25) + parseInt(b.ap25)),
+        String(parseInt(a.ap26) + parseInt(b.ap26)),
+        String(parseInt(a.ap27) + parseInt(b.ap27)),
+        String(parseInt(a.ap28) + parseInt(b.ap28)),
+        String(parseInt(a.ap29) + parseInt(b.ap29)),
+        String(parseInt(a.ap30) + parseInt(b.ap30))
+
     )
     return countryTotal
 }
@@ -966,6 +1135,37 @@ const writeCSV = userList => {
             { id: 'ma29', title: 'ma29' },
             { id: 'ma30', title: 'ma30' },
             { id: 'ma31', title: 'ma31' },
+            { id: 'ap01', title: 'ap01' },
+            { id: 'ap02', title: 'ap02' },
+            { id: 'ap03', title: 'ap03' },
+            { id: 'ap04', title: 'ap04' },
+            { id: 'ap05', title: 'ap05' },
+            { id: 'ap06', title: 'ap06' },
+            { id: 'ap07', title: 'ap07' },
+            { id: 'ap08', title: 'ap08' },
+            { id: 'ap09', title: 'ap09' },
+            { id: 'ap10', title: 'ap10' },
+            { id: 'ap11', title: 'ap11' },
+            { id: 'ap12', title: 'ap12' },
+            { id: 'ap13', title: 'ap13' },
+            { id: 'ap14', title: 'ap14' },
+            { id: 'ap15', title: 'ap15' },
+            { id: 'ap16', title: 'ap16' },
+            { id: 'ap17', title: 'ap17' },
+            { id: 'ap18', title: 'ap18' },
+            { id: 'ap19', title: 'ap19' },
+            { id: 'ap20', title: 'ap20' },
+            { id: 'ap21', title: 'ap21' },
+            { id: 'ap22', title: 'ap22' },
+            { id: 'ap23', title: 'ap23' },
+            { id: 'ap24', title: 'ap24' },
+            { id: 'ap25', title: 'ap25' },
+            { id: 'ap26', title: 'ap26' },
+            { id: 'ap27', title: 'ap27' },
+            { id: 'ap28', title: 'ap28' },
+            { id: 'ap29', title: 'ap29' },
+            { id: 'ap30', title: 'ap30' },
+
         ]
     });
 
